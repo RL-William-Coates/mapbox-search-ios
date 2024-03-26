@@ -3,13 +3,13 @@ import UIKit
 enum Fonts {
     static func `default`(style: UIFont.TextStyle, traits: UITraitCollection?) -> UIFont {
         let metrics = UIFontMetrics(forTextStyle: style)
-        let font = fontCollection(fontName: "AvenirNext-Medium")[style]!
+        let font = fontCollection(fontName: "AtkinsonHyperlegible-Regular")[style]!
         return metrics.scaledFont(for: font, compatibleWith: traits)
     }
     
     static func bold(style: UIFont.TextStyle, traits: UITraitCollection?) -> UIFont {
         let metrics = UIFontMetrics(forTextStyle: style)
-        let font = fontCollection(fontName: "AvenirNext-Bold")[style]!
+        let font = fontCollection(fontName: "AtkinsonHyperlegible-Bold")[style]!
         return metrics.scaledFont(for: font, compatibleWith: traits)
     }
     

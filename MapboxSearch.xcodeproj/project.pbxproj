@@ -87,6 +87,8 @@
 		2CE1B9FD2A13D41A005B043F /* address-suggestions-san-francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1B9F92A13D412005B043F /* address-suggestions-san-francisco.json */; };
 		2CE1B9FE2A13D41A005B043F /* address-retrieve-san-francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1B9FA2A13D412005B043F /* address-retrieve-san-francisco.json */; };
 		3A0D7E56233522D5006D81BB /* MapboxSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */; };
+		967BB15D2BB2F448008E505B /* AtkinsonHyperlegible-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 967BB15B2BB2F438008E505B /* AtkinsonHyperlegible-Bold.ttf */; };
+		96B71D222BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */; };
 		DFBC8A6D2AD42F5F00D394EF /* Any+dumpAsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */; };
 		E648C0B626428D2B0044315F /* MapboxCoreSearch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */; };
 		E648C0BA26428D3D0044315F /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; };
@@ -538,6 +540,8 @@
 		2CE1B9FA2A13D412005B043F /* address-retrieve-san-francisco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "address-retrieve-san-francisco.json"; sourceTree = "<group>"; };
 		3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D7E55233522D5006D81BB /* MapboxSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		967BB15B2BB2F438008E505B /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
+		96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../../../../../route-led-sat-nav-ios/RouteLedSatNav/Fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 		DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+dumpAsString.swift"; sourceTree = "<group>"; };
 		E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreSearch.xcframework; path = Carthage/Build/MapboxCoreSearch.xcframework; sourceTree = "<group>"; };
 		E648C0B926428D3D0044315F /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = Carthage/Build/MapboxCommon.xcframework; sourceTree = "<group>"; };
@@ -1315,6 +1319,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		967BB15C2BB2F43F008E505B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				967BB15F2BB2F507008E505B /* AtkinsonHyperlegible */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		967BB15F2BB2F507008E505B /* AtkinsonHyperlegible */ = {
+			isa = PBXGroup;
+			children = (
+				967BB15B2BB2F438008E505B /* AtkinsonHyperlegible-Bold.ttf */,
+				96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */,
+			);
+			path = AtkinsonHyperlegible;
+			sourceTree = "<group>";
+		};
 		F91D2D162617513700F7DFDF /* MockWebServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1628,7 +1649,6 @@
 				FEEDD34B2508E02700DC0A98 /* CategoriesProvider.swift */,
 				FEEDD32E2508E02700DC0A98 /* CategoriesTableViewCell.swift */,
 				FEEDD3402508E02700DC0A98 /* CategoriesTableViewSource.swift */,
-				FEEDD33D2508E02700DC0A98 /* SearchCategory.swift */,
 				FE49CF6A2510EF7C0059C189 /* CategoryDataProvider.swift */,
 				F98E086025386D7F00FDAD1F /* CategorySuggestionsController.swift */,
 				F96535A72538AD380066D699 /* CategorySuggestionsController.xib */,
@@ -1642,6 +1662,7 @@
 				FEEDD3462508E02700DC0A98 /* FavoriteEntry.swift */,
 				FEEDD3282508E02700DC0A98 /* FavoriteEntryTemplate.swift */,
 				FEEDD33A2508E02700DC0A98 /* FavoritesTableViewSource.swift */,
+				967BB15C2BB2F43F008E505B /* Fonts */,
 				FEEC2B482625DAD0000D5959 /* Fonts.swift */,
 				FEEDD3482508E02700DC0A98 /* Helpers */,
 				FEEDD3362508E02700DC0A98 /* HistoryHeader.swift */,
@@ -1662,6 +1683,7 @@
 				FEEDD32F2508E02700DC0A98 /* SearchBar.xib */,
 				FEEDD3292508E02700DC0A98 /* SearchCategoriesRootView.swift */,
 				FEEDD3502508E02700DC0A98 /* SearchCategoriesRootView.xib */,
+				FEEDD33D2508E02700DC0A98 /* SearchCategory.swift */,
 				FEEDD34D2508E02700DC0A98 /* SearchErrorView.swift */,
 				FEEDD3302508E02700DC0A98 /* SearchErrorView.xib */,
 				FEEDD3332508E02700DC0A98 /* SearchHistoryCell.swift */,
@@ -1676,9 +1698,9 @@
 				F9284FF525AC866400C74903 /* SendFeedbackController.xib */,
 				FEEDD3212508E02700DC0A98 /* Strings.swift */,
 				FE006D0325FB7A2A00D44707 /* Style.swift */,
+				143695F5289927FD00861F1A /* UIApplication+Extensions.swift */,
 				FEEDD3222508E02700DC0A98 /* UserFavoriteCell.swift */,
 				FEEDD3322508E02700DC0A98 /* UserFavoriteCell.xib */,
-				143695F5289927FD00861F1A /* UIApplication+Extensions.swift */,
 			);
 			path = MapboxSearchUI;
 			sourceTree = "<group>";
@@ -2113,6 +2135,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967BB15D2BB2F448008E505B /* AtkinsonHyperlegible-Bold.ttf in Resources */,
+				96B71D222BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf in Resources */,
 				FEC6EEE5246BFBB30051732D /* MapboxSearchUIResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
