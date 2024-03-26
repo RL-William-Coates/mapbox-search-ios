@@ -626,6 +626,12 @@ extension MapboxSearchController: SearchCategoriesRootViewDelegate {
         favoriteDetailsController = detailsVC
         mapboxPanelController?.push(viewController: detailsVC, animated: true)
     }
+
+    func userSwitchedTabs() {
+        let panel = mapboxPanelController
+        assert(panel != nil)
+        panel?.setState(.opened)
+    }
 }
 
 // MARK: - History Source Delegate

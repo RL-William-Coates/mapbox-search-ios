@@ -1,5 +1,13 @@
 import UIKit
 
+protocol UserSwitchedTabsProtocol {
+    func userSwitchedTabs()
+}
+
+protocol CategoriesFavoritesSegmentControlDelegate: UserSwitchedTabsProtocol, AnyObject {
+    
+}
+
 class CategoriesFavoritesSegmentControl: UIControl {
     enum Tab {
         case categories
@@ -42,6 +50,8 @@ class CategoriesFavoritesSegmentControl: UIControl {
     @IBOutlet private var selectionCategoriesHorizontalConstraint: NSLayoutConstraint!
     @IBOutlet private var selectionFavoritesHorizontalConstraint: NSLayoutConstraint!
     
+    weak var delegate: CategoriesFavoritesSegmentControlDelegate?
+
     var configuration: Configuration! {
         didSet {
             updateUI()
@@ -124,12 +134,14 @@ class CategoriesFavoritesSegmentControl: UIControl {
         CATransaction.setValue(true, forKey: forceExplicitAnimationTransactionKey)
         selectedTab = .categories
         sendActions(for: .valueChanged)
+        delegate?.userSwitchedTabs()
     }
     
     @IBAction func tapFavoritesButton() {
         CATransaction.setValue(true, forKey: forceExplicitAnimationTransactionKey)
         selectedTab = .favorites
         sendActions(for: .valueChanged)
+        delegate?.userSwitchedTabs()
     }
 
     override func layoutSubviews() {

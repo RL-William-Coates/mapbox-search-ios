@@ -1,7 +1,7 @@
 import MapboxSearch
 import UIKit
 
-protocol SearchCategoriesRootViewDelegate: CategoriesTableViewSourceDelegate, UserFavoriteSelectionProtocol {
+protocol SearchCategoriesRootViewDelegate: CategoriesTableViewSourceDelegate, UserFavoriteSelectionProtocol, UserSwitchedTabsProtocol {
     func userRequestedFavoriteLocationUpdate(favoriteRecord: FavoriteEntry)
     func userRequestedNewFavorite()
     func userRequestedFavoriteRenaming(favoriteRecord: FavoriteEntry)
@@ -74,7 +74,8 @@ class SearchCategoriesRootView: UIView {
         
         categoriesDataSource.delegate = self
         favoritesDataSource.delegate = self
-        
+        segmentedControl.delegate = self
+
         categoriesTableView.dataSource = categoriesDataSource
         categoriesTableView.delegate = categoriesDataSource
         favoritesTableView.dataSource = favoritesDataSource
@@ -125,6 +126,12 @@ extension SearchCategoriesRootView: FavoritesTableViewSourceDelegate {
     
     func userFavoriteSelected(_ userFavorite: FavoriteRecord) {
         delegate?.userFavoriteSelected(userFavorite)
+    }
+}
+
+extension SearchCategoriesRootView: CategoriesFavoritesSegmentControlDelegate {
+    func userSwitchedTabs() {
+        delegate?.userSwitchedTabs()
     }
 }
 
