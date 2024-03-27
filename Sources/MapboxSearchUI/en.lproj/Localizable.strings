@@ -1,6 +1,6 @@
 "tab.categories.name" = "CATEGORIES";
 
-"tab.favorites.name" = "FAVORITES";
+"tab.favorites.name" = "FAVOURITES";
 
 "history.header.name" = "RECENT SEARCHES";
 
@@ -74,7 +74,7 @@
 
 "search.general.cancel" = "Cancel";
 
-"favorite.cell.addNew.name" = "ADD TO FAVORITES";
+"favorite.cell.addNew.name" = "ADD TO FAVOURITES";
 
 "favorite.details.nameField.header" = "NAME";
 

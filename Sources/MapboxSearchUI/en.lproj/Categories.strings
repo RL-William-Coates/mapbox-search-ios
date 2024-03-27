@@ -1,4 +1,4 @@
-"gas_station.short" = "Gas";
+"gas_station.short" = "Petrol";
 
 "parking_lot" = "Parking";
 
@@ -14,19 +14,19 @@
 
 "hotel" = "Hotel";
 
-"gas_station" = "Gas Station";
+"gas_station" = "Petrol Station";
 
 "charging_station" = "Charging Station";
 
-"bus_station" = "Bus station";
+"bus_station" = "Bus Station";
 
-"railway_station" = "Train station";
+"railway_station" = "Train Station";
 
-"shopping_mall" = "Shopping malls";
+"shopping_mall" = "Shopping Centres";
 
 "grocery" = "Supermarket / Grocery";
 
-"clothing_store" = "Clothing / shoes";
+"clothing_store" = "Clothing / Shoes";
 
 "pharmacy" = "Pharmacy";
 
@@ -38,12 +38,12 @@
 
 "fitness_center" = "Gym / Fitness";
 
-"nightclub" = "Night clubs";
+"nightclub" = "Night Clubs";
 
-"auto_repair" = "Auto repair / mechanic";
+"auto_repair" = "Mechanic";
 
-"atm" = "ATM";
+"atm" = "Cash Machine";
 
 "hospital" = "Hospital";
 
-"emergency_room" = "ER";
+"emergency_room" = "A&E";

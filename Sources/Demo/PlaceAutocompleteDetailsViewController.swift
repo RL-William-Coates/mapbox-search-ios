@@ -99,7 +99,7 @@ private extension PlaceAutocompleteResultViewController {
 }
 
 extension PlaceAutocomplete.Result {
-    static let measurumentFormatter: MeasurementFormatter = {
+    static let measurementFormatter: MeasurementFormatter = {
         let formatter = MeasurementFormatter()
         formatter.unitOptions = [.naturalScale]
         formatter.numberFormatter.roundingMode = .halfUp
@@ -133,7 +133,7 @@ extension PlaceAutocomplete.Result {
 
         if let estimatedTime = estimatedTime {
             components.append(
-                (name: "Estimated time", value: PlaceAutocomplete.Result.measurumentFormatter.string(from: estimatedTime))
+                (name: "Estimated time", value: PlaceAutocomplete.Result.measurementFormatter.string(from: estimatedTime))
             )
         }
         

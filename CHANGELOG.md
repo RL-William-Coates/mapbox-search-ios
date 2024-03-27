@@ -6,6 +6,8 @@ Guide: https://keepachangelog.com/en/1.0.0/
 
 ## Unreleased
 
+- [SearchUI] Add `distanceFormatter` field to Configuration to support changing the search suggestions distance format. Nil values will use the default behavior.
+
 ## 1.0.0-rc.7 - 2023-07-13
 
 ### Added
