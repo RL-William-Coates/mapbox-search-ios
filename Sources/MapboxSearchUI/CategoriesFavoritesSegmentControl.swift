@@ -19,7 +19,8 @@ class CategoriesFavoritesSegmentControl: UIControl {
     var selectionSegmentProgress: CGFloat = 0 {
         didSet {
             let screenScale = (window?.screen ?? .main).scale
-            let maxSelectionOffsetX = self.bounds.width - self.selectionSegment.bounds.width
+            // The -5 value accounts for the extra 'U' in the UK localisation of favourites.
+            let maxSelectionOffsetX = self.bounds.width - self.selectionSegment.bounds.width - 5
             let offsetX = round(maxSelectionOffsetX * self.selectionSegmentProgress * screenScale) / screenScale
             
             self.selectionSegment.frame.origin.x = offsetX

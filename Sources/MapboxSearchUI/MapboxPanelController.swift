@@ -147,9 +147,9 @@ public class MapboxPanelController: UIViewController {
         updateUI(for: searchConfiguration)
         
         view.clipsToBounds = false
-        view.layer.cornerRadius = 7
+        view.layer.cornerRadius = 20
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        view.layer.shadowRadius = 7
+        view.layer.shadowRadius = 10
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset.height = 1
         view.preservesSuperviewLayoutMargins = false
