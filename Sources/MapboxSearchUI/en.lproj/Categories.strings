@@ -8,42 +8,42 @@
 
 "cafe" = "Cafe";
 
-"cafe.long" = "Coffee Shop / Cafe";
+"cafe.long" = "Cafes";
 
 "bar" = "Bars";
 
-"hotel" = "Hotel";
+"hotel" = "Hotels";
 
 "gas_station" = "Petrol Station";
 
-"charging_station" = "Charging Station";
+"charging_station" = "Charging Stations";
 
-"bus_station" = "Bus Station";
+"bus_station" = "Bus Stations";
 
-"railway_station" = "Train Station";
+"railway_station" = "Train Stations";
 
 "shopping_mall" = "Shopping Centres";
 
-"grocery" = "Supermarket / Grocery";
+"grocery" = "Supermarkets";
 
-"clothing_store" = "Clothing / Shoes";
+"clothing_store" = "Clothing Stores";
 
-"pharmacy" = "Pharmacy";
+"pharmacy" = "Pharmacies";
 
 "museum" = "Museums";
 
 "park" = "Parks";
 
-"cinema" = "Movie Theaters";
+"cinema" = "Cinemas";
 
-"fitness_center" = "Gym / Fitness";
+"fitness_center" = "Gyms";
 
 "nightclub" = "Night Clubs";
 
-"auto_repair" = "Mechanic";
+"auto_repair" = "Mechanics";
 
-"atm" = "Cash Machine";
+"atm" = "Cash Machines";
 
-"hospital" = "Hospital";
+"hospital" = "Hospitals";
 
 "emergency_room" = "A&E";
