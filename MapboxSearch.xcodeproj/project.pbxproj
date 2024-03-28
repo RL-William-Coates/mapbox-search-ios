@@ -89,11 +89,9 @@
 		3A0D7E56233522D5006D81BB /* MapboxSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */; };
 		967BB15D2BB2F448008E505B /* AtkinsonHyperlegible-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 967BB15B2BB2F438008E505B /* AtkinsonHyperlegible-Bold.ttf */; };
 		96B71D222BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */; };
+		96DA09212BB58BA4002FA047 /* MapboxCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 96DA09202BB58BA4002FA047 /* MapboxCommon */; };
+		96DA09232BB58BB7002FA047 /* MapboxCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 96DA09222BB58BB7002FA047 /* MapboxCommon */; };
 		DFBC8A6D2AD42F5F00D394EF /* Any+dumpAsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */; };
-		E648C0B626428D2B0044315F /* MapboxCoreSearch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */; };
-		E648C0BA26428D3D0044315F /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; };
-		E648C0BD26428D530044315F /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; };
-		E648C0BE26428D530044315F /* MapboxCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E648C0C9264297A10044315F /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0C8264297730044315F /* libc++.1.tbd */; };
 		F907440F261B00000091899C /* suggestions-san-francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = F907440E261B00000091899C /* suggestions-san-francisco.json */; };
 		F9074425261B0DF70091899C /* retrieve-san-francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = F9074424261B0DF70091899C /* retrieve-san-francisco.json */; };
@@ -468,7 +466,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FEBC00DB243C6D32000B268B /* MapboxSearch.framework in Embed Frameworks */,
-				E648C0BE26428D530044315F /* MapboxCommon.xcframework in Embed Frameworks */,
 				FEBC00DF243C6D32000B268B /* MapboxSearchUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -542,6 +539,28 @@
 		3A0D7E55233522D5006D81BB /* MapboxSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		967BB15B2BB2F438008E505B /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
 		96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../../../../../route-led-sat-nav-ios/RouteLedSatNav/Fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
+		96DA091C2BB57C99002FA047 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Categories.strings; sourceTree = "<group>"; };
+		96DA091D2BB57C99002FA047 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD476C2BB593190053C881 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD476D2BB593190053C881 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD476E2BB594A10053C881 /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD476F2BB594A10053C881 /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD47702BB5964A0053C881 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD47712BB5964A0053C881 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD47722BB596DD0053C881 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD47732BB596DD0053C881 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD47742BB597230053C881 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD47752BB597230053C881 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD47762BB5975B0053C881 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD47772BB5975B0053C881 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD47782BB597CE0053C881 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD47792BB597CE0053C881 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD477A2BB598290053C881 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD477B2BB598290053C881 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD477C2BB598790053C881 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD477D2BB598790053C881 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD477E2BB598DF0053C881 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Categories.strings; sourceTree = "<group>"; };
+		96FD477F2BB598E00053C881 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+dumpAsString.swift"; sourceTree = "<group>"; };
 		E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreSearch.xcframework; path = Carthage/Build/MapboxCoreSearch.xcframework; sourceTree = "<group>"; };
 		E648C0B926428D3D0044315F /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = Carthage/Build/MapboxCommon.xcframework; sourceTree = "<group>"; };
@@ -611,7 +630,6 @@
 		FE006CE225FA67A500D44707 /* NoSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSuggestionsView.swift; sourceTree = "<group>"; };
 		FE006D0325FB7A2A00D44707 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		FE049921261B64DA00E575A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FE04993F261C707D00E575A2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		FE04995A261CA44500E575A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Categories.strings; sourceTree = "<group>"; };
 		FE059C59251A0AE6001F7701 /* SearchCategorySuggestionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategorySuggestionImpl.swift; sourceTree = "<group>"; };
 		FE059C60251A0E27001F7701 /* SearchSuggestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestType.swift; sourceTree = "<group>"; };
@@ -828,8 +846,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E648C0B626428D2B0044315F /* MapboxCoreSearch.xcframework in Frameworks */,
-				E648C0BA26428D3D0044315F /* MapboxCommon.xcframework in Frameworks */,
+				96DA09232BB58BB7002FA047 /* MapboxCommon in Frameworks */,
 				E648C0C9264297A10044315F /* libc++.1.tbd in Frameworks */,
 				149948E7290A8ACE00E7E619 /* Swifter in Frameworks */,
 			);
@@ -869,7 +886,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E648C0BD26428D530044315F /* MapboxCommon.xcframework in Frameworks */,
+				96DA09212BB58BA4002FA047 /* MapboxCommon in Frameworks */,
 				FEBC00DA243C6D32000B268B /* MapboxSearch.framework in Frameworks */,
 				FEBC00DE243C6D32000B268B /* MapboxSearchUI.framework in Frameworks */,
 			);
@@ -1808,6 +1825,7 @@
 			name = MapboxSearch;
 			packageProductDependencies = (
 				149948E6290A8ACE00E7E619 /* Swifter */,
+				96DA09222BB58BB7002FA047 /* MapboxCommon */,
 			);
 			productName = MapboxSearch;
 			productReference = 3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */;
@@ -1904,6 +1922,7 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
+				96DA09202BB58BA4002FA047 /* MapboxCommon */,
 			);
 			productName = Demo;
 			productReference = FEBC00B8243C6CC2000B268B /* Demo.app */;
@@ -1992,12 +2011,23 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				ar,
+				bn,
+				zh,
+				fr,
+				de,
+				hi,
+				it,
+				pt,
 				ru,
+				ur,
 			);
 			mainGroup = 3A0D7E42233522D4006D81BB;
 			packageReferences = (
 				FE1122EF2567D07B0064FD53 /* XCRemoteSwiftPackageReference "CwlPreconditionTesting" */,
 				149948E5290A8ACE00E7E619 /* XCRemoteSwiftPackageReference "swifter" */,
+				96DA091F2BB58BA4002FA047 /* XCRemoteSwiftPackageReference "mapbox-common-ios" */,
 			);
 			productRefGroup = 3A0D7E4D233522D4006D81BB /* Products */;
 			projectDirPath = "";
@@ -2740,6 +2770,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE049921261B64DA00E575A2 /* en */,
+				96DA091D2BB57C99002FA047 /* es */,
+				96FD476D2BB593190053C881 /* ar */,
+				96FD476F2BB594A10053C881 /* bn */,
+				96FD47712BB5964A0053C881 /* zh */,
+				96FD47732BB596DD0053C881 /* fr */,
+				96FD47752BB597230053C881 /* de */,
+				96FD47772BB5975B0053C881 /* hi */,
+				96FD47792BB597CE0053C881 /* it */,
+				96FD477B2BB598290053C881 /* pt */,
+				96FD477D2BB598790053C881 /* ru */,
+				96FD477F2BB598E00053C881 /* ur */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2748,6 +2789,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE04995A261CA44500E575A2 /* en */,
+				96DA091C2BB57C99002FA047 /* es */,
+				96FD476C2BB593190053C881 /* ar */,
+				96FD476E2BB594A10053C881 /* bn */,
+				96FD47702BB5964A0053C881 /* zh */,
+				96FD47722BB596DD0053C881 /* fr */,
+				96FD47742BB597230053C881 /* de */,
+				96FD47762BB5975B0053C881 /* hi */,
+				96FD47782BB597CE0053C881 /* it */,
+				96FD477A2BB598290053C881 /* pt */,
+				96FD477C2BB598790053C881 /* ru */,
+				96FD477E2BB598DF0053C881 /* ur */,
 			);
 			name = Categories.strings;
 			sourceTree = "<group>";
@@ -2764,7 +2816,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FEEDD3B92508E3CD00DC0A98 /* Base */,
-				FE04993F261C707D00E575A2 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -2963,14 +3014,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = Tests/MapboxSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2986,14 +3037,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = Tests/MapboxSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -3006,7 +3057,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = Tests/MapboxSearchUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3016,7 +3067,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.DemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3030,7 +3081,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = Tests/MapboxSearchUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3040,7 +3091,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.DemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -3055,14 +3106,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = Tests/MapboxSearchIntegrationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3078,14 +3129,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = Tests/MapboxSearchIntegrationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -3099,7 +3150,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3109,7 +3160,7 @@
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchDemoApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchDemoApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -3124,7 +3175,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3134,7 +3185,7 @@
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchDemoApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchDemoApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -3148,12 +3199,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				IBC_MODULE = MapboxSearchUI;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/MapboxSearchUI/Resources-Info.plist";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchUIResources;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchUIResources";
 				PRODUCT_NAME = MapboxSearchUIResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -3168,12 +3219,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = 25AB5GSR35;
 				IBC_MODULE = MapboxSearchUI;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/MapboxSearchUI/Resources-Info.plist";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxSearchUIResources;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.william-coates.MapboxSearchUIResources";
 				PRODUCT_NAME = MapboxSearchUIResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -3338,6 +3389,14 @@
 				version = 1.5.0;
 			};
 		};
+		96DA091F2BB58BA4002FA047 /* XCRemoteSwiftPackageReference "mapbox-common-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-common-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.9.2;
+			};
+		};
 		F9C5573E2670CB0400BE8B94 /* XCRemoteSwiftPackageReference "CwlPreconditionTesting" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mattgallagher/CwlPreconditionTesting.git";
@@ -3376,6 +3435,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 149948E5290A8ACE00E7E619 /* XCRemoteSwiftPackageReference "swifter" */;
 			productName = Swifter;
+		};
+		96DA09202BB58BA4002FA047 /* MapboxCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96DA091F2BB58BA4002FA047 /* XCRemoteSwiftPackageReference "mapbox-common-ios" */;
+			productName = MapboxCommon;
+		};
+		96DA09222BB58BB7002FA047 /* MapboxCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96DA091F2BB58BA4002FA047 /* XCRemoteSwiftPackageReference "mapbox-common-ios" */;
+			productName = MapboxCommon;
 		};
 		F9C5573D2670CB0400BE8B94 /* CwlPreconditionTesting */ = {
 			isa = XCSwiftPackageProductDependency;

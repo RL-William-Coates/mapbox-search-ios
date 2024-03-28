@@ -1,0 +1,85 @@
+"tab.categories.name" = "CATÉGORIES";
+
+"tab.favorites.name" = "FAVORIS";
+
+"history.header.name" = "RECHERCHES RÉCENTES";
+
+"history.header.empty.name" = "AUCUNE RECHERCHE RÉCENTE";
+
+"history.record.removeButton.name" = "Supprimer";
+
+"search.textfield.placeholder" = "Où ?";
+
+"search.error.noInternet.name" = "PAS DE CONNEXION INTERNET";
+
+"search.error.noInternet.description" = "Vous êtes hors ligne. Essayez de vous reconnecter.";
+
+"search.error.generic.name" = "ERREUR";
+
+"search.error.generic.description" = "Quelque chose s'est mal passé.";
+
+"search.error.server.name" = "ERREUR DE SERVEUR";
+
+"search.error.server.description" = "Quelque chose s'est mal passé.";
+
+"favorite.cell.action.rename.name" = "Renommer";
+
+"favorite.cell.action.editLocation.name" = "Modifier l'emplacement";
+
+"favorite.cell.action.removeLocation.name" = "Supprimer l'emplacement";
+
+"favorite.cell.deleteRecord.name" = "Supprimer";
+
+"favorite.cell.cancel.name" = "Annuler";
+
+"favorite.cell.address.placeholder" = "Appuyez pour définir l'adresse";
+
+"favorite.cell.default.home.name" = "Domicile";
+
+"favorite.cell.default.work.name" = "Travail";
+
+"favorite.details.title" = "Modifier les détails";
+
+"favorite.details.cancelButton.name" = "Annuler";
+
+"favorite.details.doneButton.name" = "Terminé";
+
+"search.feedback.reportButton.name" = "Signaler";
+
+"search.feedback.descriptionField.name" = "Description (facultatif)";
+
+"search.feedback.submitButton.name" = "Soumettre";
+
+"search.feedback.title" = "Envoyer des commentaires";
+
+"search.feedback.reason.incorrectNameOption.name" = "Nom incorrect";
+
+"search.feedback.reason.incorrectAddressOption.name" = "Adresse incorrecte";
+
+"search.feedback.reason.incorrectLocationOption.name" = "Emplacement incorrect";
+
+"search.feedback.reason.missingResultOption.name" = "Résultat manquant";
+
+"search.feedback.reason.other.name" = "Autre";
+
+"search.feedback.error.name" = "Erreur de commentaires";
+
+"search.feedback.error.message" = "Une erreur inconnue s'est produite lors de la soumission de ces commentaires.";
+
+"search.feedback.confirmation.title" = "Envoyer des commentaires ?";
+
+"search.feedback.confirmation.message" = "Êtes-vous sûr de vouloir envoyer ces commentaires à Mapbox ?";
+
+"search.general.ok" = "OK";
+
+"search.general.cancel" = "Annuler";
+
+"favorite.cell.addNew.name" = "AJOUTER AUX FAVORIS";
+
+"favorite.details.nameField.header" = "NOM";
+
+"favorite.details.address.header" = "ADRESSE";
+
+"search.error.noSuggestions.name" = "AUCUNE SUGGESTION TROUVÉE";
+
+"search.error.noConnection.retryButton" = "TOUCHEZ POUR RÉESSAYER";

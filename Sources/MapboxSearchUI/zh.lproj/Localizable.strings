@@ -1,0 +1,85 @@
+"tab.categories.name" = "类别";
+
+"tab.favorites.name" = "收藏夹";
+
+"history.header.name" = "最近搜索";
+
+"history.header.empty.name" = "无最近搜索记录";
+
+"history.record.removeButton.name" = "移除";
+
+"search.textfield.placeholder" = "要去哪里？";
+
+"search.error.noInternet.name" = "无网络连接";
+
+"search.error.noInternet.description" = "您处于离线状态，请尝试重新连接。";
+
+"search.error.generic.name" = "错误";
+
+"search.error.generic.description" = "出现了一些问题。";
+
+"search.error.server.name" = "服务器错误";
+
+"search.error.server.description" = "出现了一些问题。";
+
+"favorite.cell.action.rename.name" = "重命名";
+
+"favorite.cell.action.editLocation.name" = "编辑位置";
+
+"favorite.cell.action.removeLocation.name" = "移除位置";
+
+"favorite.cell.deleteRecord.name" = "删除";
+
+"favorite.cell.cancel.name" = "取消";
+
+"favorite.cell.address.placeholder" = "点击设置地址";
+
+"favorite.cell.default.home.name" = "家";
+
+"favorite.cell.default.work.name" = "工作";
+
+"favorite.details.title" = "编辑详情";
+
+"favorite.details.cancelButton.name" = "取消";
+
+"favorite.details.doneButton.name" = "完成";
+
+"search.feedback.reportButton.name" = "报告";
+
+"search.feedback.descriptionField.name" = "描述（可选）";
+
+"search.feedback.submitButton.name" = "提交";
+
+"search.feedback.title" = "发送反馈";
+
+"search.feedback.reason.incorrectNameOption.name" = "名称错误";
+
+"search.feedback.reason.incorrectAddressOption.name" = "地址错误";
+
+"search.feedback.reason.incorrectLocationOption.name" = "位置错误";
+
+"search.feedback.reason.missingResultOption.name" = "缺少结果";
+
+"search.feedback.reason.other.name" = "其他";
+
+"search.feedback.error.name" = "反馈错误";
+
+"search.feedback.error.message" = "提交此反馈时发生了未知错误。";
+
+"search.feedback.confirmation.title" = "提交反馈？";
+
+"search.feedback.confirmation.message" = "您确定要将此反馈发送给Mapbox吗？";
+
+"search.general.ok" = "确定";
+
+"search.general.cancel" = "取消";
+
+"favorite.cell.addNew.name" = "添加到收藏夹";
+
+"favorite.details.nameField.header" = "名称";
+
+"favorite.details.address.header" = "地址";
+
+"search.error.noSuggestions.name" = "未找到建议";
+
+"search.error.noConnection.retryButton" = "点击重试";

@@ -1,0 +1,85 @@
+"tab.categories.name" = "الفئات";
+
+"tab.favorites.name" = "المفضلة";
+
+"history.header.name" = "البحوث الأخيرة";
+
+"history.header.empty.name" = "لا توجد بحوث أخيرة";
+
+"history.record.removeButton.name" = "حذف";
+
+"search.textfield.placeholder" = "إلى أين؟";
+
+"search.error.noInternet.name" = "لا يوجد اتصال بالإنترنت";
+
+"search.error.noInternet.description" = "أنت غير متصل بالإنترنت. حاول الاتصال مرة أخرى.";
+
+"search.error.generic.name" = "خطأ";
+
+"search.error.generic.description" = "حدث خطأ ما.";
+
+"search.error.server.name" = "خطأ في الخادم";
+
+"search.error.server.description" = "حدث خطأ ما.";
+
+"favorite.cell.action.rename.name" = "إعادة تسمية";
+
+"favorite.cell.action.editLocation.name" = "تحرير الموقع";
+
+"favorite.cell.action.removeLocation.name" = "إزالة الموقع";
+
+"favorite.cell.deleteRecord.name" = "حذف";
+
+"favorite.cell.cancel.name" = "إلغاء";
+
+"favorite.cell.address.placeholder" = "انقر لتعيين العنوان";
+
+"favorite.cell.default.home.name" = "المنزل";
+
+"favorite.cell.default.work.name" = "العمل";
+
+"favorite.details.title" = "تحرير التفاصيل";
+
+"favorite.details.cancelButton.name" = "إلغاء";
+
+"favorite.details.doneButton.name" = "تم";
+
+"search.feedback.reportButton.name" = "تقرير";
+
+"search.feedback.descriptionField.name" = "الوصف (اختياري)";
+
+"search.feedback.submitButton.name" = "إرسال";
+
+"search.feedback.title" = "إرسال ملاحظات";
+
+"search.feedback.reason.incorrectNameOption.name" = "اسم خاطئ";
+
+"search.feedback.reason.incorrectAddressOption.name" = "عنوان خاطئ";
+
+"search.feedback.reason.incorrectLocationOption.name" = "موقع خاطئ";
+
+"search.feedback.reason.missingResultOption.name" = "النتيجة مفقودة";
+
+"search.feedback.reason.other.name" = "أخرى";
+
+"search.feedback.error.name" = "خطأ في الملاحظات";
+
+"search.feedback.error.message" = "حدث خطأ غير معروف عند إرسال هذه الملاحظات.";
+
+"search.feedback.confirmation.title" = "هل تريد إرسال الملاحظات؟";
+
+"search.feedback.confirmation.message" = "هل أنت متأكد من رغبتك في إرسال هذه الملاحظات إلى Mapbox؟";
+
+"search.general.ok" = "موافق";
+
+"search.general.cancel" = "إلغاء";
+
+"favorite.cell.addNew.name" = "إضافة إلى المفضلة";
+
+"favorite.details.nameField.header" = "الاسم";
+
+"favorite.details.address.header" = "العنوان";
+
+"search.error.noSuggestions.name" = "لم يتم العثور على اقتراحات";
+
+"search.error.noConnection.retryButton" = "انقر لإعادة المحاولة";

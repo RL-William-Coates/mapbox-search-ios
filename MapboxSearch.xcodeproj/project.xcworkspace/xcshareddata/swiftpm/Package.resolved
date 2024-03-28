@@ -1,12 +1,13 @@
 {
+  "originHash" : "b29a75f5d60d44f7b867d3215b603bfa34e73be2669a0552c3c8c8c67d334ab8",
   "pins" : [
     {
       "identity" : "cwlcatchexception",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattgallagher/CwlCatchException.git",
       "state" : {
-        "revision" : "3b123999de19bf04905bc1dfdb76f817b0f2cc00",
-        "version" : "2.1.2"
+        "revision" : "3ef6999c73b6938cc0da422f2c912d0158abb0a0",
+        "version" : "2.2.0"
       }
     },
     {
@@ -14,8 +15,26 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattgallagher/CwlPreconditionTesting.git",
       "state" : {
-        "revision" : "a23ded2c91df9156628a6996ab4f347526f17b6b",
-        "version" : "2.1.2"
+        "revision" : "2ef56b2caf25f55fa7eef8784c30d5a767550f54",
+        "version" : "2.2.1"
+      }
+    },
+    {
+      "identity" : "mapbox-common-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-common-ios",
+      "state" : {
+        "revision" : "696503304fe8807bd5af3abb23ef20c051dd8b12",
+        "version" : "23.9.2"
+      }
+    },
+    {
+      "identity" : "mapbox-search-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mapbox/mapbox-search-ios",
+      "state" : {
+        "revision" : "ecd3aa0f782aa0a27267c7118dd6ebd391ea7f82",
+        "version" : "1.0.0-rc.8"
       }
     },
     {
@@ -28,5 +47,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

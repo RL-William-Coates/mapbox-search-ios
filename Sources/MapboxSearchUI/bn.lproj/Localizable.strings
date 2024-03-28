@@ -1,0 +1,85 @@
+"tab.categories.name" = "বিভাগ";
+
+"tab.favorites.name" = "প্রিয়";
+
+"history.header.name" = "সাম্প্রতিক অনুসন্ধানগুলি";
+
+"history.header.empty.name" = "কোন সাম্প্রতিক অনুসন্ধান নেই";
+
+"history.record.removeButton.name" = "মুছুন";
+
+"search.textfield.placeholder" = "কোথায়?";
+
+"search.error.noInternet.name" = "ইন্টারনেট সংযোগ নেই";
+
+"search.error.noInternet.description" = "আপনি অফলাইন। পুনরায় সংযুক্ত চেষ্টা করুন।";
+
+"search.error.generic.name" = "ত্রুটি";
+
+"search.error.generic.description" = "কিছু ভুল হয়েছে।";
+
+"search.error.server.name" = "সার্ভার ত্রুটি";
+
+"search.error.server.description" = "কিছু ভুল হয়েছে।";
+
+"favorite.cell.action.rename.name" = "পুনঃনামকরণ";
+
+"favorite.cell.action.editLocation.name" = "লোকেশন সম্পাদনা করুন";
+
+"favorite.cell.action.removeLocation.name" = "লোকেশন সরান";
+
+"favorite.cell.deleteRecord.name" = "মুছুন";
+
+"favorite.cell.cancel.name" = "বাতিল করুন";
+
+"favorite.cell.address.placeholder" = "ঠিকানা নির্ধারণ করতে ট্যাপ করুন";
+
+"favorite.cell.default.home.name" = "বাড়ি";
+
+"favorite.cell.default.work.name" = "কাজ";
+
+"favorite.details.title" = "বিস্তারিত সম্পাদনা";
+
+"favorite.details.cancelButton.name" = "বাতিল";
+
+"favorite.details.doneButton.name" = "সম্পন্ন";
+
+"search.feedback.reportButton.name" = "রিপোর্ট";
+
+"search.feedback.descriptionField.name" = "বিবরণ (ঐচ্ছিক)";
+
+"search.feedback.submitButton.name" = "জমা দিন";
+
+"search.feedback.title" = "প্রতিক্রিয়া পাঠান";
+
+"search.feedback.reason.incorrectNameOption.name" = "ভুল নাম";
+
+"search.feedback.reason.incorrectAddressOption.name" = "ভুল ঠিকানা";
+
+"search.feedback.reason.incorrectLocationOption.name" = "ভুল লোকেশন";
+
+"search.feedback.reason.missingResultOption.name" = "ফলাফল অনুপস্থিত";
+
+"search.feedback.reason.other.name" = "অন্যান্য";
+
+"search.feedback.error.name" = "প্রতিক্রিয়া ত্রুটি";
+
+"search.feedback.error.message" = "এই প্রতিক্রিয়া জমা দিতে একটি অজানা ত্রুটি ঘটেছে।";
+
+"search.feedback.confirmation.title" = "প্রতিক্রিয়া পাঠাবেন?";
+
+"search.feedback.confirmation.message" = "আপনি কি নিশ্চিত যে আপনি এই প্রতিক্রিয়াটি Mapbox এ পাঠাতে চান?";
+
+"search.general.ok" = "ঠিক আছে";
+
+"search.general.cancel" = "বাতিল";
+
+"favorite.cell.addNew.name" = "প্রিয়তে যোগ করুন";
+
+"favorite.details.nameField.header" = "নাম";
+
+"favorite.details.address.header" = "ঠিকানা";
+
+"search.error.noSuggestions.name" = "কোন পরামর্শ পাওয়া যায়নি";
+
+"search.error.noConnection.retryButton" = "পুনরায় চেষ্টা করুন";

@@ -1,0 +1,49 @@
+"gas_station.short" = "पेट्रोल";
+
+"parking_lot" = "पार्किंग";
+
+"restaurants" = "रेस्तरां";
+
+"restaurant.alias.food" = "खाना";
+
+"cafe" = "कैफे";
+
+"cafe.long" = "कैफे";
+
+"bar" = "बार";
+
+"hotel" = "होटल";
+
+"gas_station" = "पेट्रोल पंप";
+
+"charging_station" = "चार्जिंग स्टेशन";
+
+"bus_station" = "बस स्टेशन";
+
+"railway_station" = "रेलवे स्टेशन";
+
+"shopping_mall" = "शॉपिंग मॉल";
+
+"grocery" = "सुपरमार्केट";
+
+"clothing_store" = "कपड़ा स्टोर";
+
+"pharmacy" = "फार्मेसी";
+
+"museum" = "संग्रहालय";
+
+"park" = "पार्क";
+
+"cinema" = "सिनेमा";
+
+"fitness_center" = "जिम";
+
+"nightclub" = "नाइट क्लब";
+
+"auto_repair" = "मेकेनिक";
+
+"atm" = "कैश मशीन";
+
+"hospital" = "अस्पताल";
+
+"emergency_room" = "एअंडई";

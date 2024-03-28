@@ -1,0 +1,85 @@
+"tab.categories.name" = "KATEGORIEN";
+
+"tab.favorites.name" = "LIEBLINGE";
+
+"history.header.name" = "LETZTE SUCHANFRAGEN";
+
+"history.header.empty.name" = "KEINE LETZTEN SUCHANFRAGEN";
+
+"history.record.removeButton.name" = "Entfernen";
+
+"search.textfield.placeholder" = "Wohin?";
+
+"search.error.noInternet.name" = "KEINE INTERNETVERBINDUNG";
+
+"search.error.noInternet.description" = "Du bist offline. Versuche es erneut zu verbinden.";
+
+"search.error.generic.name" = "FEHLER";
+
+"search.error.generic.description" = "Etwas ist schiefgelaufen.";
+
+"search.error.server.name" = "SERVERFEHLER";
+
+"search.error.server.description" = "Etwas ist schiefgelaufen.";
+
+"favorite.cell.action.rename.name" = "Umbenennen";
+
+"favorite.cell.action.editLocation.name" = "Ort bearbeiten";
+
+"favorite.cell.action.removeLocation.name" = "Ort entfernen";
+
+"favorite.cell.deleteRecord.name" = "Löschen";
+
+"favorite.cell.cancel.name" = "Abbrechen";
+
+"favorite.cell.address.placeholder" = "Tippen, um die Adresse festzulegen";
+
+"favorite.cell.default.home.name" = "Zuhause";
+
+"favorite.cell.default.work.name" = "Arbeit";
+
+"favorite.details.title" = "Details bearbeiten";
+
+"favorite.details.cancelButton.name" = "Abbrechen";
+
+"favorite.details.doneButton.name" = "Fertig";
+
+"search.feedback.reportButton.name" = "Melden";
+
+"search.feedback.descriptionField.name" = "Beschreibung (optional)";
+
+"search.feedback.submitButton.name" = "Senden";
+
+"search.feedback.title" = "Feedback senden";
+
+"search.feedback.reason.incorrectNameOption.name" = "Falscher Name";
+
+"search.feedback.reason.incorrectAddressOption.name" = "Falsche Adresse";
+
+"search.feedback.reason.incorrectLocationOption.name" = "Falscher Ort";
+
+"search.feedback.reason.missingResultOption.name" = "Fehlendes Ergebnis";
+
+"search.feedback.reason.other.name" = "Andere";
+
+"search.feedback.error.name" = "Feedback-Fehler";
+
+"search.feedback.error.message" = "Beim Senden dieses Feedbacks ist ein unbekannter Fehler aufgetreten.";
+
+"search.feedback.confirmation.title" = "Feedback senden?";
+
+"search.feedback.confirmation.message" = "Bist du sicher, dass du dieses Feedback an Mapbox senden möchtest?";
+
+"search.general.ok" = "OK";
+
+"search.general.cancel" = "Abbrechen";
+
+"favorite.cell.addNew.name" = "ZU LIEBLINGEN HINZUFÜGEN";
+
+"favorite.details.nameField.header" = "NAME";
+
+"favorite.details.address.header" = "ADRESSE";
+
+"search.error.noSuggestions.name" = "KEINE VORSCHLÄGE GEFUNDEN";
+
+"search.error.noConnection.retryButton" = "TIPPEN ZUM WIEDERHOLEN";

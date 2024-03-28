@@ -1,0 +1,49 @@
+"gas_station.short" = "بنزين";
+
+"parking_lot" = "موقف سيارات";
+
+"restaurants" = "مطاعم";
+
+"restaurant.alias.food" = "طعام";
+
+"cafe" = "مقهى";
+
+"cafe.long" = "مقاهي";
+
+"bar" = "حانة";
+
+"hotel" = "فنادق";
+
+"gas_station" = "محطة وقود";
+
+"charging_station" = "محطات الشحن";
+
+"bus_station" = "محطات الحافلات";
+
+"railway_station" = "محطات القطارات";
+
+"shopping_mall" = "مراكز التسوق";
+
+"grocery" = "سوبرماركت";
+
+"clothing_store" = "متاجر الملابس";
+
+"pharmacy" = "صيدلية";
+
+"museum" = "متاحف";
+
+"park" = "حدائق";
+
+"cinema" = "سينما";
+
+"fitness_center" = "صالات الألعاب الرياضية";
+
+"nightclub" = "نوادي ليلية";
+
+"auto_repair" = "ورش السيارات";
+
+"atm" = "ماكينات الصراف الآلي";
+
+"hospital" = "مستشفيات";
+
+"emergency_room" = "الطوارئ";

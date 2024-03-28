@@ -1,0 +1,49 @@
+"gas_station.short" = "Бензиновая";
+
+"parking_lot" = "Парковка";
+
+"restaurants" = "Рестораны";
+
+"restaurant.alias.food" = "Еда";
+
+"cafe" = "Кафе";
+
+"cafe.long" = "Кафе";
+
+"bar" = "Бары";
+
+"hotel" = "Гостиницы";
+
+"gas_station" = "АЗС";
+
+"charging_station" = "Зарядные станции";
+
+"bus_station" = "Автобусные остановки";
+
+"railway_station" = "Железнодорожные станции";
+
+"shopping_mall" = "Торговые центры";
+
+"grocery" = "Супермаркеты";
+
+"clothing_store" = "Магазины одежды";
+
+"pharmacy" = "Аптеки";
+
+"museum" = "Музеи";
+
+"park" = "Парки";
+
+"cinema" = "Кинотеатры";
+
+"fitness_center" = "Фитнес-центры";
+
+"nightclub" = "Ночные клубы";
+
+"auto_repair" = "Автомастерские";
+
+"atm" = "Банкоматы";
+
+"hospital" = "Больницы";
+
+"emergency_room" = "Приемное отделение";

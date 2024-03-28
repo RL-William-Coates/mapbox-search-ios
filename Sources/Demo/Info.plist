@@ -49,6 +49,10 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_Proxyman._tcp</string>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Use location to provide more accurate search results.</string>
 	<key>UILaunchStoryboardName</key>
@@ -71,10 +75,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSBonjourServices</key>
-	<array>
-		<string>_Proxyman._tcp</string>
 	</array>
 </dict>
 </plist>

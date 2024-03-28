@@ -1,0 +1,85 @@
+"tab.categories.name" = "زمرے";
+
+"tab.favorites.name" = "پسندیدہ";
+
+"history.header.name" = "حالیہ تلاشیں";
+
+"history.header.empty.name" = "کوئی حالیہ تلاش نہیں";
+
+"history.record.removeButton.name" = "ہٹائیں";
+
+"search.textfield.placeholder" = "کہاں جانا ہے؟";
+
+"search.error.noInternet.name" = "انٹرنیٹ کنکشن نہیں";
+
+"search.error.noInternet.description" = "آپ آف لائن ہیں۔ دوبارہ کنکشن بنائیں۔";
+
+"search.error.generic.name" = "خرابی";
+
+"search.error.generic.description" = "کچھ غلط ہوگیا ہے۔";
+
+"search.error.server.name" = "سرور کی خرابی";
+
+"search.error.server.description" = "کچھ غلط ہوگیا ہے۔";
+
+"favorite.cell.action.rename.name" = "تبدیل کریں";
+
+"favorite.cell.action.editLocation.name" = "مقام ترتیب دیں";
+
+"favorite.cell.action.removeLocation.name" = "مقام ہٹائیں";
+
+"favorite.cell.deleteRecord.name" = "حذف کریں";
+
+"favorite.cell.cancel.name" = "منسوخ کریں";
+
+"favorite.cell.address.placeholder" = "پتہ مقرر کرنے کے لئے ٹیپ کریں";
+
+"favorite.cell.default.home.name" = "گھر";
+
+"favorite.cell.default.work.name" = "کام";
+
+"favorite.details.title" = "تفصیلات ترتیب کریں";
+
+"favorite.details.cancelButton.name" = "منسوخ کریں";
+
+"favorite.details.doneButton.name" = "ہوگیا";
+
+"search.feedback.reportButton.name" = "رپورٹ";
+
+"search.feedback.descriptionField.name" = "تفصیل (اختیاری)";
+
+"search.feedback.submitButton.name" = "جمع کریں";
+
+"search.feedback.title" = "آراء بھیجیں";
+
+"search.feedback.reason.incorrectNameOption.name" = "غلط نام";
+
+"search.feedback.reason.incorrectAddressOption.name" = "غلط پتہ";
+
+"search.feedback.reason.incorrectLocationOption.name" = "غلط مقام";
+
+"search.feedback.reason.missingResultOption.name" = "نتیجہ نہیں ملا";
+
+"search.feedback.reason.other.name" = "دیگر";
+
+"search.feedback.error.name" = "آراء کی خرابی";
+
+"search.feedback.error.message" = "یہ آراء جمع کرانے کے وقت ایک نامعلوم خرابی آگئی ہے۔";
+
+"search.feedback.confirmation.title" = "آراء بھیجیں؟";
+
+"search.feedback.confirmation.message" = "کیا آپ یقینی ہیں کہ آپ یہ آراء Mapbox کو بھیجنا چاہتے ہیں؟";
+
+"search.general.ok" = "ٹھیک ہے";
+
+"search.general.cancel" = "منسوخ کریں";
+
+"favorite.cell.addNew.name" = "پسندیدہ میں شامل کریں";
+
+"favorite.details.nameField.header" = "نام";
+
+"favorite.details.address.header" = "پتہ";
+
+"search.error.noSuggestions.name" = "کوئی سراگ نہیں ملا";
+
+"search.error.noConnection.retryButton" = "دوبارہ کوشش کریں";

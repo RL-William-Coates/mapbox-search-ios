@@ -1,0 +1,49 @@
+"gas_station.short" = "পেট্রোল";
+
+"parking_lot" = "পার্কিং";
+
+"restaurants" = "রেস্তোরাঁ";
+
+"restaurant.alias.food" = "খাবার";
+
+"cafe" = "ক্যাফে";
+
+"cafe.long" = "ক্যাফে";
+
+"bar" = "বার";
+
+"hotel" = "হোটেল";
+
+"gas_station" = "পেট্রোল স্টেশন";
+
+"charging_station" = "চার্জিং স্টেশন";
+
+"bus_station" = "বাস স্টেশন";
+
+"railway_station" = "রেলওয়ে স্টেশন";
+
+"shopping_mall" = "শপিং মল";
+
+"grocery" = "মুদিখানা";
+
+"clothing_store" = "পোশাকের দোকান";
+
+"pharmacy" = "ফার্মেসি";
+
+"museum" = "জাদুঘর";
+
+"park" = "পার্ক";
+
+"cinema" = "সিনেমা";
+
+"fitness_center" = "ফিটনেস সেন্টার";
+
+"nightclub" = "নাইট ক্লাব";
+
+"auto_repair" = "অটো মেকানিক";
+
+"atm" = "এটিএম";
+
+"hospital" = "হাসপাতাল";
+
+"emergency_room" = "এমার্জেন্সি রুম";

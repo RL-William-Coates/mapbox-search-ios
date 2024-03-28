@@ -1,0 +1,85 @@
+"tab.categories.name" = "श्रेणियाँ";
+
+"tab.favorites.name" = "पसंदीदा";
+
+"history.header.name" = "हाल की खोजें";
+
+"history.header.empty.name" = "कोई हाल की खोजें नहीं";
+
+"history.record.removeButton.name" = "हटाएं";
+
+"search.textfield.placeholder" = "कहाँ जाना है?";
+
+"search.error.noInternet.name" = "कोई इंटरनेट कनेक्शन नहीं";
+
+"search.error.noInternet.description" = "आप ऑफलाइन हैं। पुनः कनेक्ट करने का प्रयास करें।";
+
+"search.error.generic.name" = "त्रुटि";
+
+"search.error.generic.description" = "कुछ गलत हो गया है।";
+
+"search.error.server.name" = "सर्वर त्रुटि";
+
+"search.error.server.description" = "कुछ गलत हो गया है।";
+
+"favorite.cell.action.rename.name" = "नाम बदलें";
+
+"favorite.cell.action.editLocation.name" = "स्थान संपादित करें";
+
+"favorite.cell.action.removeLocation.name" = "स्थान हटाएं";
+
+"favorite.cell.deleteRecord.name" = "हटाएं";
+
+"favorite.cell.cancel.name" = "रद्द करें";
+
+"favorite.cell.address.placeholder" = "पता सेट करने के लिए टैप करें";
+
+"favorite.cell.default.home.name" = "घर";
+
+"favorite.cell.default.work.name" = "काम";
+
+"favorite.details.title" = "विवरण संपादित करें";
+
+"favorite.details.cancelButton.name" = "रद्द";
+
+"favorite.details.doneButton.name" = "किया";
+
+"search.feedback.reportButton.name" = "रिपोर्ट";
+
+"search.feedback.descriptionField.name" = "विवरण (वैकल्पिक)";
+
+"search.feedback.submitButton.name" = "प्रस्तुत";
+
+"search.feedback.title" = "प्रतिक्रिया भेजें";
+
+"search.feedback.reason.incorrectNameOption.name" = "गलत नाम";
+
+"search.feedback.reason.incorrectAddressOption.name" = "गलत पता";
+
+"search.feedback.reason.incorrectLocationOption.name" = "गलत स्थान";
+
+"search.feedback.reason.missingResultOption.name" = "कोई परिणाम नहीं मिला";
+
+"search.feedback.reason.other.name" = "अन्य";
+
+"search.feedback.error.name" = "प्रतिक्रिया त्रुटि";
+
+"search.feedback.error.message" = "इस प्रतिक्रिया को सबमिट करते समय एक अज्ञात त्रुटि हुई।";
+
+"search.feedback.confirmation.title" = "प्रतिक्रिया प्रस्तुत करें?";
+
+"search.feedback.confirmation.message" = "क्या आप इस प्रतिक्रिया को मैपबॉक्स को भेजना चाहते हैं?";
+
+"search.general.ok" = "ठीक है";
+
+"search.general.cancel" = "रद्द करें";
+
+"favorite.cell.addNew.name" = "पसंदीदा में जोड़ें";
+
+"favorite.details.nameField.header" = "नाम";
+
+"favorite.details.address.header" = "पता";
+
+"search.error.noSuggestions.name" = "कोई सुझाव नहीं मिला";
+
+"search.error.noConnection.retryButton" = "पुनः प्रयास करें";

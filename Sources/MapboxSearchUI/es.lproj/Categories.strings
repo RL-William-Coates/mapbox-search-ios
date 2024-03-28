@@ -1,0 +1,49 @@
+"gas_station.short" = "Gasolineras";
+
+"parking_lot" = "Aparcamiento";
+
+"restaurants" = "Restaurantes";
+
+"restaurant.alias.food" = "Comida";
+
+"cafe" = "Cafeterías";
+
+"cafe.long" = "Cafeterías";
+
+"bar" = "Bares";
+
+"hotel" = "Hoteles";
+
+"gas_station" = "Gasolineras";
+
+"charging_station" = "Estaciones de carga";
+
+"bus_station" = "Estaciones de autobús";
+
+"railway_station" = "Estaciones de tren";
+
+"shopping_mall" = "Centros comerciales";
+
+"grocery" = "Supermercados";
+
+"clothing_store" = "Tiendas de ropa";
+
+"pharmacy" = "Farmacias";
+
+"museum" = "Museos";
+
+"park" = "Parques";
+
+"cinema" = "Cines";
+
+"fitness_center" = "Gimnasios";
+
+"nightclub" = "Discotecas";
+
+"auto_repair" = "Reparación de autos / Mecánico";
+
+"atm" = "Cajeros automáticos";
+
+"hospital" = "Hospitales";
+
+"emergency_room" = "ER";

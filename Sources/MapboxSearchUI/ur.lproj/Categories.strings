@@ -1,0 +1,49 @@
+"gas_station.short" = "پٹرول";
+
+"parking_lot" = "پارکنگ";
+
+"restaurants" = "ریستوراں";
+
+"restaurant.alias.food" = "کھانا";
+
+"cafe" = "کیفے";
+
+"cafe.long" = "کیفے";
+
+"bar" = "بار";
+
+"hotel" = "ہوٹل";
+
+"gas_station" = "پٹرول پمپ";
+
+"charging_station" = "چارجنگ اسٹیشنز";
+
+"bus_station" = "بس اسٹیشن";
+
+"railway_station" = "ریلوے اسٹیشن";
+
+"shopping_mall" = "شاپنگ مال";
+
+"grocery" = "سپرمارکیٹ";
+
+"clothing_store" = "کپڑے کی دکان";
+
+"pharmacy" = "دوائی کی دکان";
+
+"museum" = "عجائب گھر";
+
+"park" = "پارک";
+
+"cinema" = "سینما";
+
+"fitness_center" = "جمن";
+
+"nightclub" = "نائٹ کلب";
+
+"auto_repair" = "میکانک";
+
+"atm" = "ای ٹی ایم";
+
+"hospital" = "ہسپتال";
+
+"emergency_room" = "حادثاتی کمرہ";

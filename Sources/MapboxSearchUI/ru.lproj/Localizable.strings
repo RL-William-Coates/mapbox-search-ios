@@ -1,0 +1,85 @@
+"tab.categories.name" = "КАТЕГОРИИ";
+
+"tab.favorites.name" = "ИЗБРАННОЕ";
+
+"history.header.name" = "ПОСЛЕДНИЕ ЗАПРОСЫ";
+
+"history.header.empty.name" = "НЕТ ПОСЛЕДНИХ ЗАПРОСОВ";
+
+"history.record.removeButton.name" = "Удалить";
+
+"search.textfield.placeholder" = "Куда?";
+
+"search.error.noInternet.name" = "НЕТ ИНТЕРНЕТА";
+
+"search.error.noInternet.description" = "Вы оффлайн. Попробуйте подключиться к сети.";
+
+"search.error.generic.name" = "ОШИБКА";
+
+"search.error.generic.description" = "Что-то пошло не так.";
+
+"search.error.server.name" = "ОШИБКА СЕРВЕРА";
+
+"search.error.server.description" = "Что-то пошло не так.";
+
+"favorite.cell.action.rename.name" = "Переименовать";
+
+"favorite.cell.action.editLocation.name" = "Изменить местоположение";
+
+"favorite.cell.action.removeLocation.name" = "Удалить местоположение";
+
+"favorite.cell.deleteRecord.name" = "Удалить";
+
+"favorite.cell.cancel.name" = "Отмена";
+
+"favorite.cell.address.placeholder" = "Нажмите, чтобы установить адрес";
+
+"favorite.cell.default.home.name" = "Дом";
+
+"favorite.cell.default.work.name" = "Работа";
+
+"favorite.details.title" = "Изменить детали";
+
+"favorite.details.cancelButton.name" = "Отмена";
+
+"favorite.details.doneButton.name" = "Готово";
+
+"search.feedback.reportButton.name" = "Сообщить";
+
+"search.feedback.descriptionField.name" = "Описание (необязательно)";
+
+"search.feedback.submitButton.name" = "Отправить";
+
+"search.feedback.title" = "Отправить обратную связь";
+
+"search.feedback.reason.incorrectNameOption.name" = "Неверное название";
+
+"search.feedback.reason.incorrectAddressOption.name" = "Неверный адрес";
+
+"search.feedback.reason.incorrectLocationOption.name" = "Неверное местоположение";
+
+"search.feedback.reason.missingResultOption.name" = "Отсутствует результат";
+
+"search.feedback.reason.other.name" = "Другое";
+
+"search.feedback.error.name" = "Ошибка обратной связи";
+
+"search.feedback.error.message" = "Произошла неизвестная ошибка при отправке этой обратной связи.";
+
+"search.feedback.confirmation.title" = "Отправить обратную связь?";
+
+"search.feedback.confirmation.message" = "Вы уверены, что хотите отправить эту обратную связь Mapbox?";
+
+"search.general.ok" = "ОК";
+
+"search.general.cancel" = "Отмена";
+
+"favorite.cell.addNew.name" = "ДОБАВИТЬ В ИЗБРАННОЕ";
+
+"favorite.details.nameField.header" = "НАЗВАНИЕ";
+
+"favorite.details.address.header" = "АДРЕС";
+
+"search.error.noSuggestions.name" = "НЕТ ПРЕДЛОЖЕНИЙ";
+
+"search.error.noConnection.retryButton" = "НАЖМИТЕ ДЛЯ ПОВТОРА";
