@@ -91,6 +91,7 @@
 		96B71D222BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */; };
 		96DA09212BB58BA4002FA047 /* MapboxCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 96DA09202BB58BA4002FA047 /* MapboxCommon */; };
 		96DA09232BB58BB7002FA047 /* MapboxCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 96DA09222BB58BB7002FA047 /* MapboxCommon */; };
+		96FD47822BB5A8010053C881 /* PreviewCategoriesFavoritesSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD47802BB5A7F20053C881 /* PreviewCategoriesFavoritesSegmentControl.swift */; };
 		DFBC8A6D2AD42F5F00D394EF /* Any+dumpAsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */; };
 		E648C0C9264297A10044315F /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0C8264297730044315F /* libc++.1.tbd */; };
 		F907440F261B00000091899C /* suggestions-san-francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = F907440E261B00000091899C /* suggestions-san-francisco.json */; };
@@ -561,6 +562,7 @@
 		96FD477D2BB598790053C881 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		96FD477E2BB598DF0053C881 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Categories.strings; sourceTree = "<group>"; };
 		96FD477F2BB598E00053C881 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96FD47802BB5A7F20053C881 /* PreviewCategoriesFavoritesSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCategoriesFavoritesSegmentControl.swift; sourceTree = "<group>"; };
 		DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+dumpAsString.swift"; sourceTree = "<group>"; };
 		E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreSearch.xcframework; path = Carthage/Build/MapboxCoreSearch.xcframework; sourceTree = "<group>"; };
 		E648C0B926428D3D0044315F /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = Carthage/Build/MapboxCommon.xcframework; sourceTree = "<group>"; };
@@ -1694,6 +1696,7 @@
 				FEEDD3252508E02700DC0A98 /* MapboxSearchController.xib */,
 				FE006CE225FA67A500D44707 /* NoSuggestionsView.swift */,
 				FEEDD3272508E02700DC0A98 /* NoSuggestionsView.xib */,
+				96FD47802BB5A7F20053C881 /* PreviewCategoriesFavoritesSegmentControl.swift */,
 				FEEDD3202508E02700DC0A98 /* Query.swift */,
 				FEEDD3382508E02700DC0A98 /* Reachability.swift */,
 				FEEDD3372508E02700DC0A98 /* SearchBar.swift */,
@@ -2682,6 +2685,7 @@
 				FE49CF6E2510EFD00059C189 /* DefaultCategoryDataProvider.swift in Sources */,
 				F9C98874270B42FA00D030B0 /* LocationCoordinateHelpers.swift in Sources */,
 				FEEDD3782508E02700DC0A98 /* FavoriteEntry.swift in Sources */,
+				96FD47822BB5A8010053C881 /* PreviewCategoriesFavoritesSegmentControl.swift in Sources */,
 				FEEDD3562508E02700DC0A98 /* MapboxSearchController.swift in Sources */,
 				FEEDD3682508E02700DC0A98 /* HistoryHeader.swift in Sources */,
 				FEEDD37F2508E02700DC0A98 /* ActivityProgressView.swift in Sources */,

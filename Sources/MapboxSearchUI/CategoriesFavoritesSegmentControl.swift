@@ -8,6 +8,7 @@ protocol CategoriesFavoritesSegmentControlDelegate: UserSwitchedTabsProtocol, An
     
 }
 
+// Preview available in PreviewCategoriesFavoritesSegmentControl.swift
 class CategoriesFavoritesSegmentControl: UIControl {
     enum Tab {
         case categories
@@ -23,9 +24,10 @@ class CategoriesFavoritesSegmentControl: UIControl {
             let maxSelectionOffsetX = self.bounds.width - self.selectionSegment.bounds.width - 5
             let offsetX = round(maxSelectionOffsetX * self.selectionSegmentProgress * screenScale) / screenScale
             
-            self.selectionSegment.frame.origin.x = offsetX
+            selectionSegment.frame.origin.x = offsetX
             
-            let forceExplicitAnimations = CATransaction.value(forKey: self.forceExplicitAnimationTransactionKey) as? Bool == true
+            let forceExplicitAnimations = CATransaction.value(forKey: forceExplicitAnimationTransactionKey)
+                as? Bool == true
             
             CATransaction.begin()
             if forceExplicitAnimations {
@@ -35,7 +37,7 @@ class CategoriesFavoritesSegmentControl: UIControl {
                 CATransaction.setDisableActions(true)
             }
             
-            self.updateMasksOffsets()
+            updateMasksOffsets()
             
             CATransaction.commit()
         }
@@ -48,9 +50,7 @@ class CategoriesFavoritesSegmentControl: UIControl {
     @IBOutlet private var favoritesInactiveTitle: UIButton!
     
     @IBOutlet private var selectionSegment: UIView!
-    @IBOutlet private var selectionCategoriesHorizontalConstraint: NSLayoutConstraint!
-    @IBOutlet private var selectionFavoritesHorizontalConstraint: NSLayoutConstraint!
-    
+
     weak var delegate: CategoriesFavoritesSegmentControlDelegate?
 
     var configuration: Configuration! {
@@ -71,19 +71,23 @@ class CategoriesFavoritesSegmentControl: UIControl {
     override func willMove(toWindow newWindow: UIWindow?) {
         super.willMove(toWindow: newWindow)
         
-        #if TARGET_INTERFACE_BUILDER
+#if TARGET_INTERFACE_BUILDER
         configuration = .init()
-        #endif
+#endif
         
         assert(configuration != nil)
         
         categoriesTitle.titleLabel?.font = Fonts.bold(style: .caption2, traits: traitCollection)
-        categoriesTitle.setTitle(Strings.CategoriesFavoritesSegmentControl.categories,
-                                 for: .normal)
+        categoriesTitle.setTitle(
+            Strings.CategoriesFavoritesSegmentControl.categories,
+            for: .normal
+        )
         
         categoriesInactiveTitle.titleLabel?.font = Fonts.bold(style: .caption2, traits: traitCollection)
-        categoriesInactiveTitle.setTitle(Strings.CategoriesFavoritesSegmentControl.categories,
-                                         for: .normal)
+        categoriesInactiveTitle.setTitle(
+            Strings.CategoriesFavoritesSegmentControl.categories,
+            for: .normal
+        )
         
         favoritesTitle.titleLabel?.font = Fonts.bold(style: .caption2, traits: traitCollection)
         favoritesTitle.setTitle(Strings.CategoriesFavoritesSegmentControl.favorites, for: .normal)
@@ -131,14 +135,16 @@ class CategoriesFavoritesSegmentControl: UIControl {
         favoritesTitle.setTitleColor(configuration.style.activeSegmentTitleColor, for: .normal)
     }
     
-    @IBAction func tapCategoriesButton() {
+    @IBAction
+    func tapCategoriesButton() {
         CATransaction.setValue(true, forKey: forceExplicitAnimationTransactionKey)
         selectedTab = .categories
         sendActions(for: .valueChanged)
         delegate?.userSwitchedTabs()
     }
     
-    @IBAction func tapFavoritesButton() {
+    @IBAction
+    func tapFavoritesButton() {
         CATransaction.setValue(true, forKey: forceExplicitAnimationTransactionKey)
         selectedTab = .favorites
         sendActions(for: .valueChanged)
@@ -169,31 +175,3 @@ class CategoriesFavoritesSegmentControl: UIControl {
         favoritesInactiveTitleMask.path = selectionSegmentPath
     }
 }
-
-#if canImport(SwiftUI) && DEBUG
-import SwiftUI
-@available(iOS 13.0, *)
-struct TabsSegmentControlRepresentable: UIViewRepresentable {
-    func makeUIView(context: Context) -> UIView {
-        UINib(nibName: "CategoriesFavoritesSegmentControl", bundle: .mapboxSearchUI).instantiate(withOwner: nil, options: nil)[0] as! UIView
-    }
-    
-    func updateUIView(_ view: UIView, context: Context) {
-    }
-}
-
-@available(iOS 13.0, *)
-struct CategoriesFavoritesSegmentControlPreview: PreviewProvider {
-    static var previews: some View {
-        Group {
-            TabsSegmentControlRepresentable()
-                .previewDisplayName("Light Mode")
-                .previewLayout(PreviewLayout.fixed(width: 202, height: 28))
-            TabsSegmentControlRepresentable()
-                .previewDisplayName("Dark Mode")
-                .preferredColorScheme(.dark)
-                .previewLayout(PreviewLayout.fixed(width: 300, height: 40))
-        }
-    }
-}
-#endif
