@@ -538,6 +538,10 @@
 		2CE1B9FA2A13D412005B043F /* address-retrieve-san-francisco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "address-retrieve-san-francisco.json"; sourceTree = "<group>"; };
 		3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D7E55233522D5006D81BB /* MapboxSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96031D442C3FE0BF00CA6D15 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Main.strings"; sourceTree = "<group>"; };
+		96031D452C3FE0C000CA6D15 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		96031D462C3FE0C000CA6D15 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Categories.strings"; sourceTree = "<group>"; };
+		96031D472C3FE0C000CA6D15 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		967BB15B2BB2F438008E505B /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
 		96B71D212BB2F52F003A5D56 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../../../../../route-led-sat-nav-ios/RouteLedSatNav/Fonts/AtkinsonHyperlegible/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 		96DA091C2BB57C99002FA047 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Categories.strings; sourceTree = "<group>"; };
@@ -2025,6 +2029,7 @@
 				pt,
 				ru,
 				ur,
+				"en-US",
 			);
 			mainGroup = 3A0D7E42233522D4006D81BB;
 			packageReferences = (
@@ -2785,6 +2790,7 @@
 				96FD477B2BB598290053C881 /* pt */,
 				96FD477D2BB598790053C881 /* ru */,
 				96FD477F2BB598E00053C881 /* ur */,
+				96031D472C3FE0C000CA6D15 /* en-US */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2804,6 +2810,7 @@
 				96FD477A2BB598290053C881 /* pt */,
 				96FD477C2BB598790053C881 /* ru */,
 				96FD477E2BB598DF0053C881 /* ur */,
+				96031D462C3FE0C000CA6D15 /* en-US */,
 			);
 			name = Categories.strings;
 			sourceTree = "<group>";
@@ -2812,6 +2819,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FEEDD3B72508E3CD00DC0A98 /* Base */,
+				96031D452C3FE0C000CA6D15 /* en-US */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2820,6 +2828,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FEEDD3B92508E3CD00DC0A98 /* Base */,
+				96031D442C3FE0BF00CA6D15 /* en-US */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
