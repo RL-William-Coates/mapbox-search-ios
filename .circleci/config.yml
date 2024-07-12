@@ -10,19 +10,23 @@ workflows:
   develop-build:
     jobs:
       - pre-check:
+          context: SDK Registry Token
           filters:
             tags:
               only: /v.*/
       - build:
+          context: SDK Registry Token
           requires:
             - pre-check
           filters:
             tags:
               only: /v.*/
       - spm-build:
+          context: SDK Registry Token
           requires:
             - pre-check
       - release-pre-check:
+          context: SDK Registry Token
           requires:
             - pre-check
           filters:
@@ -32,24 +36,28 @@ workflows:
               ignore: /.*/
               # only: /release\/[0-9]+\.[0-9]+\.[0-9]+.*/
       - build-for-release:
+          context: SDK Registry Token
           requires:
             - release-pre-check
           filters:
             tags:
               only: /v.*/
       - release-documentation:
+          context: SDK Registry Token
           requires:
             - release-pre-check
           filters:
             tags:
               only: /v.*/
       - documentation-pr:
+          context: SDK Registry Token
           requires:
             - release-documentation
           filters:
             tags:
               only: /v.*/
       - release-ios:
+          context: SDK Registry Token
           requires:
             - build-for-release
             - documentation-pr
@@ -64,6 +72,9 @@ workflows:
             tags:
               only: /v.*/
       - post-SDK_Registry-release:
+          context:
+            - SDK Registry Token
+            - CocoaPods trunk token
           requires:
             - request-post-SDK_Registry-release
           filters:
@@ -73,7 +84,7 @@ workflows:
 jobs:
   pre-check:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - checkout
       - ios-install-carthage-dependencies
@@ -81,16 +92,17 @@ jobs:
 
   release-pre-check:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - parse-release-version
       - run:
           name: Check existing public release
-          command: curl -L https://api.mapbox.com/downloads/v2/carthage/search-sdk/MapboxSearch.json | grep -v "$VERSION"
+          # Escape the quotes to check for exact versions
+          command: curl -L https://api.mapbox.com/downloads/v2/carthage/search-sdk/MapboxSearch.json | grep -v \"$VERSION\"
 
   build:
     macos:
-      xcode: 13.4.0 # Specify the Xcode version to use
+      xcode: 15.2 # Specify the Xcode version to use
     environment:
       FL_OUTPUT_DIR: ../output
     steps:
@@ -104,7 +116,7 @@ jobs:
           command: make dependencies
       - run:
           name: Test frameworks
-          command: make ci-dev-test
+          command: make ci-full-test
       - run: make codecov
       - run:
           name: Prepare artifacts
@@ -128,11 +140,12 @@ jobs:
 
   release-documentation:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - checkout
       - parse-release-version
       - setup-authentication
+      - upgrade-carthage
       - install-mbx-ci-darwin
       - restore_cache:
           keys:
@@ -151,7 +164,7 @@ jobs:
 
   documentation-pr:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - checkout
       - parse-release-version
@@ -174,7 +187,7 @@ jobs:
 
   build-for-release:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - checkout
       - setup-authentication
@@ -193,12 +206,13 @@ jobs:
 
   release-ios:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - checkout
       - setup-authentication
       - parse-release-version
-      - run: rm '/usr/local/lib/python3.9/site-packages/six.py'
+      - upgrade-carthage
+      - run: rm -f '/usr/local/lib/python3.9/site-packages/six.py'
       - run: brew install awscli gh
       - attach_workspace:
           at: Products
@@ -218,11 +232,12 @@ jobs:
 
   post-SDK_Registry-release:
     macos:
-      xcode: 13.4.0
+      xcode: 15.2
     steps:
       - checkout
       - parse-release-version
       - setup-authentication
+      - upgrade-carthage
       - install-mbx-ci-darwin
       - run: scripts/generate_podspecs.sh
       - run:
@@ -235,7 +250,7 @@ jobs:
 
   spm-build:
     macos:
-      xcode: 14.3.1
+      xcode: 15.2
     steps:
       - checkout
       - setup-authentication
@@ -277,6 +292,8 @@ commands:
   ios-install-carthage-dependencies:
     steps:
       - setup-authentication
+      # Always update carthage on v1 due to previous Xcode 14 image
+      - upgrade-carthage
       - run: make deps
 
   ios-prestart-simulator:
@@ -309,14 +326,14 @@ commands:
       - run:
           name: Install mbx-ci
           command: |
-            curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-darwin-amd64 > /usr/local/bin/mbx-ci
+            curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-darwin-arm64 > /usr/local/bin/mbx-ci
             chmod 755 /usr/local/bin/mbx-ci
 
   install-swiftlint:
     steps:
       - run:
-          name: Install SwiftLint 0.44.0
+          name: Install SwiftLint 0.53.0
           command: |
-            curl -LO https://github.com/realm/SwiftLint/releases/download/0.44.0/SwiftLint.pkg
+            curl -LO https://github.com/realm/SwiftLint/releases/download/0.53.0/SwiftLint.pkg
             sudo installer -pkg SwiftLint.pkg -target /
             rm SwiftLint.pkg

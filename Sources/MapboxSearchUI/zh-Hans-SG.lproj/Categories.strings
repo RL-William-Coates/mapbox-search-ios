@@ -1,0 +1,49 @@
+"gas_station.short" = "加油站";
+
+"parking_lot" = "停车场";
+
+"restaurants" = "餐馆";
+
+"restaurant.alias.food" = "食物";
+
+"cafe" = "咖啡馆";
+
+"cafe.long" = "咖啡馆";
+
+"bar" = "酒吧";
+
+"hotel" = "酒店";
+
+"gas_station" = "加油站";
+
+"charging_station" = "充电站";
+
+"bus_station" = "巴士站";
+
+"railway_station" = "火车站";
+
+"shopping_mall" = "购物中心";
+
+"grocery" = "超市";
+
+"clothing_store" = "服装店";
+
+"pharmacy" = "药房";
+
+"museum" = "博物馆";
+
+"park" = "公园";
+
+"cinema" = "电影院";
+
+"fitness_center" = "健身房";
+
+"nightclub" = "夜店";
+
+"auto_repair" = "修车店";
+
+"atm" = "自动取款机";
+
+"hospital" = "医院";
+
+"emergency_room" = "急诊室";

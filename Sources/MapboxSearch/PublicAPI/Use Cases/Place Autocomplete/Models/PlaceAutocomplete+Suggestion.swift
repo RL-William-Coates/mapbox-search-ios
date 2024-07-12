@@ -1,19 +1,20 @@
-// Copyright © 2022 Mapbox. All rights reserved.
-
-import Foundation
 import CoreLocation
+import Foundation
 
-public extension PlaceAutocomplete {
-    struct Suggestion {
+extension PlaceAutocomplete {
+    public struct Suggestion {
         /// Place's name.
         public let name: String
-        
+
+        /// A unique identifier for the geographic feature
+        public let mapboxId: String?
+
         /// Contains formatted address.
         public let description: String?
 
         /// Geographic point.
-        public let coordinate: CLLocationCoordinate2D
-        
+        public let coordinate: CLLocationCoordinate2D?
+
         /// Icon name according to [Mapbox Maki icon set](https://github.com/mapbox/maki/)
         public let iconName: String?
 
@@ -25,19 +26,22 @@ public extension PlaceAutocomplete {
 
         /// The type of result.
         public let placeType: SearchResultType
-        
+
         /// Poi categories. Always empty for non-POI suggestions.
         public let categories: [String]
 
         /// List of points near `coordinate`, that represents entries to associated building.
         public let routablePoints: [RoutablePoint]
-        
+
+        /// Underlying data provided by core SDK and API used to construct this Suggestion instance.
+        /// Useful for any follow-up API calls or unit test validation.
         let underlying: Underlying
 
         init(
             name: String,
+            mapboxId: String?,
             description: String?,
-            coordinate: CLLocationCoordinate2D,
+            coordinate: CLLocationCoordinate2D?,
             iconName: String?,
             distance: CLLocationDistance?,
             estimatedTime: Measurement<UnitDuration>?,
@@ -47,6 +51,7 @@ public extension PlaceAutocomplete {
             underlying: Underlying
         ) {
             self.name = name
+            self.mapboxId = mapboxId
             self.description = description
             self.coordinate = coordinate
             self.iconName = iconName
@@ -65,10 +70,11 @@ extension PlaceAutocomplete.Suggestion {
         case suggestion(CoreSearchResultProtocol, CoreRequestOptions)
         case result(SearchResult)
     }
-    
+
     func result(for underlyingResult: SearchResult) -> PlaceAutocomplete.Result {
         .init(
             name: name,
+            mapboxId: underlyingResult.mapboxId,
             description: description,
             type: placeType,
             coordinate: coordinate,
@@ -90,23 +96,25 @@ extension PlaceAutocomplete.Suggestion {
 }
 
 // MARK: - Mapping
+
 extension PlaceAutocomplete.Suggestion {
     enum Error: Swift.Error {
         case invalidCoordinates
         case invalidResultType
     }
-    
+
     static func from(_ searchResult: SearchResult) throws -> Self {
         guard let searchResultType = searchResult as? ServerSearchResult else {
             throw Error.invalidResultType
         }
-        
+
         guard CLLocationCoordinate2DIsValid(searchResult.coordinate) else {
             throw Error.invalidCoordinates
         }
 
         return .init(
             name: searchResult.name,
+            mapboxId: searchResult.mapboxId,
             description: searchResult.descriptionText,
             coordinate: searchResult.coordinate,
             iconName: searchResult.iconName,
@@ -128,12 +136,14 @@ extension PlaceAutocomplete.Suggestion {
         }
 
         guard let coordinate = searchSuggestion.center?.coordinate,
-                CLLocationCoordinate2DIsValid(coordinate) else {
+              CLLocationCoordinate2DIsValid(coordinate)
+        else {
             throw Error.invalidCoordinates
         }
 
         return .init(
             name: searchSuggestion.names.first ?? "",
+            mapboxId: searchSuggestion.mapboxId,
             description: searchSuggestion.addressDescription,
             coordinate: coordinate,
             iconName: searchSuggestion.icon,

@@ -4,41 +4,44 @@ import CoreLocation
 public struct HistoryRecord: IndexableRecord, SearchResult, Codable, Hashable {
     /// "history icon" by default
     public var iconName: String? = "history icon"
-    
+
     /// Type of stored history record
     public enum HistoryType: Int, Codable {
         /// History record was build based on search result
         case result
-        
+
         /// Search query was saved as history record
         case query
-        
+
         /// Category search was saved as history record
         case category
     }
-    
+
     /// Unique identifier
     public private(set) var id: String
-    
+
+    /// A unique identifier for the geographic feature
+    public private(set) var mapboxId: String?
+
     /// Record's name
     public private(set) var name: String
-    
+
     /// Index in response from server.
     public let serverIndex: Int?
-    
+
     /// A point accuracy metric for the returned address.
     public let accuracy: SearchResultAccuracy?
-    
+
     /**
-        The feature name, as matched by the search algorithm.
-        
-        - Warning: The field is exposed for compatibility only, will be removed soon.
-    */
+         The feature name, as matched by the search algorithm.
+
+         - Warning: The field is exposed for compatibility only, will be removed soon.
+     */
     public private(set) var matchingName: String?
-    
+
     /// Address formatted with medium style
     public var descriptionText: String? { address?.formattedAddress(style: .medium) }
-    
+
     /// Coordinate associated with the record
     public internal(set) var coordinate: CLLocationCoordinate2D {
         get {
@@ -48,44 +51,45 @@ public struct HistoryRecord: IndexableRecord, SearchResult, Codable, Hashable {
             coordinateCodable = .init(newValue)
         }
     }
-    
+
     var coordinateCodable: CLLocationCoordinate2DCodable
-    
+
     /// The time when the record was created.
     public private(set) var timestamp: Date
-    
+
     /// Type of object used to make a history record, e.g. result or query
     public private(set) var historyType: HistoryType
-    
+
     /// Original result type of object, e.g. address or POI
     public private(set) var type: SearchResultType
-    
+
     /// FavoriteRecord Always has estimatedTime as nil.
     public var estimatedTime: Measurement<UnitDuration>?
-    
+
     /// Associated metadata at creating time if available.
     public var metadata: SearchResultMetadata?
-    
+
     /// Address components of specific record
     public var address: Address?
-    
+
     /// Additional indexable tokens for search engine
     ///
     /// SearchEngine would track that tokens to match results
     public var additionalTokens: Set<String>?
-    
+
     /// Categories associated with original result
     public var categories: [String]?
-    
+
     /// Original search request.
     public let searchRequest: SearchRequestOptions
-    
+
     /// Coordinates of building entries
     public var routablePoints: [RoutablePoint]?
-    
+
     /// History record constructor
     /// - Parameters:
     ///   - id: UUID used by default
+    ///   - mapboxId:
     ///   - name: History name
     ///   - coordinate: History coordinate
     ///   - timestamp: History timestamp
@@ -97,6 +101,7 @@ public struct HistoryRecord: IndexableRecord, SearchResult, Codable, Hashable {
     ///   - routablePoints: Coordinates of building entries
     public init(
         id: String = UUID().uuidString,
+        mapboxId: String?,
         name: String,
         matchingName: String?,
         serverIndex: Int?,
@@ -112,6 +117,7 @@ public struct HistoryRecord: IndexableRecord, SearchResult, Codable, Hashable {
         routablePoints: [RoutablePoint]? = nil
     ) {
         self.id = id
+        self.mapboxId = mapboxId
         self.name = name
         self.matchingName = matchingName
         self.serverIndex = serverIndex
@@ -126,7 +132,7 @@ public struct HistoryRecord: IndexableRecord, SearchResult, Codable, Hashable {
         self.searchRequest = searchRequest
         self.routablePoints = routablePoints
     }
-    
+
     /// Construct `HistoryRecord` based on concrete `SearchResult`
     /// - Parameters:
     ///   - historyType: Type of history result
@@ -138,6 +144,7 @@ public struct HistoryRecord: IndexableRecord, SearchResult, Codable, Hashable {
         timestamp: Date = Date()
     ) {
         self.id = searchResult.id
+        self.mapboxId = searchResult.mapboxId
         self.name = searchResult.name
         self.matchingName = searchResult.matchingName
         self.serverIndex = searchResult.serverIndex

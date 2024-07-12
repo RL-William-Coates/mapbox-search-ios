@@ -22,9 +22,9 @@
 
 "railway_station" = "Train Stations";
 
-"shopping_mall" = "Shopping Centres";
+"shopping_mall" = "Shopping Malls";
 
-"grocery" = "Supermarkets";
+"grocery" = "Grocery Stores";
 
 "clothing_store" = "Clothing Stores";
 
@@ -46,4 +46,4 @@
 
 "hospital" = "Hospitals";
 
-"emergency_room" = "A&E";
+"emergency_room" = "ER";

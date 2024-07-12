@@ -1,9 +1,10 @@
-@testable import MapboxSearch
 import CoreLocation
+@testable import MapboxSearch
 
 class SearchResultStub: SearchResult {
     init(
         id: String,
+        mapboxId: String?,
         accuracy: SearchResultAccuracy? = nil,
         categories: [String]? = nil,
         name: String,
@@ -19,6 +20,7 @@ class SearchResultStub: SearchResult {
         dataLayerIdentifier: String = "unit-test-stub"
     ) {
         self.id = id
+        self.mapboxId = mapboxId
         self.accuracy = accuracy
         self.categories = categories
         self.name = name
@@ -33,10 +35,11 @@ class SearchResultStub: SearchResult {
         self.dataLayerIdentifier = dataLayerIdentifier
         self.searchRequest = searchRequest
     }
-    
+
     var dataLayerIdentifier: String
-    
+
     var id: String
+    var mapboxId: String?
     var accuracy: SearchResultAccuracy?
     var categories: [String]?
     var name: String
@@ -55,19 +58,20 @@ class SearchResultStub: SearchResult {
             coordinateCodable = .init(newValue)
         }
     }
-    
+
     var coordinateCodable: CLLocationCoordinate2DCodable
     var address: Address?
     var descriptionText: String?
     var searchRequest: SearchRequestOptions
 }
 
-
 // MARK: - SearchResultStub
+
 extension SearchResultStub {
     static var `default`: SearchResultStub {
         SearchResultStub(
             id: "AddressAutofillAddressComponentTests",
+            mapboxId: nil,
             name: "AddressAutofillAddressComponentTests",
             matchingName: nil,
             serverIndex: nil,

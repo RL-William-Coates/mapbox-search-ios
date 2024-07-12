@@ -1,6 +1,7 @@
+@_implementationOnly import MapboxCommon_Private
+
 /// https://forums.swift.org/t/update-on-implementation-only-imports/26996
 @_implementationOnly import MapboxCoreSearch
-@_implementationOnly import MapboxCommon_Private
 @_implementationOnly import MapboxCoreSearch_Private
 
 // Note: This file included in MapboxSearch and MapboxSearchTests targets
@@ -24,11 +25,19 @@ typealias CoreImageInfo = MapboxCoreSearch.ImageInfo
 typealias CoreOpenHours = MapboxCoreSearch.OpenHours
 typealias CoreOpenPeriod = MapboxCoreSearch.OpenPeriod
 typealias CoreAccuracy = MapboxCoreSearch.ResultAccuracy
+typealias CoreSearchAddressRegion = MapboxCoreSearch.SearchAddressRegion
+typealias CoreSearchAddressCountry = MapboxCoreSearch.SearchAddressCountry
 
 typealias CoreUserActivityReporter = MapboxCoreSearch.UserActivityReporter
 typealias CoreUserActivityReporterOptions = MapboxCoreSearch.UserActivityReporterOptions
 
 typealias CoreReverseGeoOptions = MapboxCoreSearch.ReverseGeoOptions
+
+// Offline
+typealias CoreOfflineIndexObserver = MapboxCoreSearch.OfflineIndexObserver
+typealias CoreOfflineIndexChangeEvent = MapboxCoreSearch.OfflineIndexChangeEvent
+typealias CoreOfflineIndexError = MapboxCoreSearch.OfflineIndexError
+typealias CoreOfflineIndexChangeEventType = MapboxCoreSearch.OfflineIndexChangeEventType
 
 let mapboxCoreSearchErrorDomain = "MapboxCoreSearchErrorDomain"
 
@@ -40,4 +49,5 @@ extension CoreSearchEngine {
 typealias CoreExpected = MapboxCommon_Private.Expected
 
 // MARK: - Public
+
 @_exported import MapboxCommon
